@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Information</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #333;
+        }
+
+        .resume {
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            color: #0b5394;
+            margin-bottom: 5px;
+        }
+
+        h3 {
+            color: #073763;
+            border-bottom: 2px solid #4facfe;
+            padding-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .header img {
+            width: 150px;
+            border-radius: 50%;
+            border: 4px solid #4facfe;
+        }
+
+        .contact p {
+            margin: 3px 0;
+        }
+
+        a {
+            color: #1c4587;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background: #4facfe;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <div class="header">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAQEBAPEBATERASEg0XDhgXDRINEA0OIBIWIiAdHx8kKDQhGSYxHR8VIT0iJSkrLi4uFx8zODMsNygtLisBCgoKDg0NGBAQGCseHSUrNzcrNysrMTc3Li0rLS03LTA3Li0tKy0uLS8rLS0tLS0tKy0rLSs3LSsrLS0rLSsrLf/AABEIAKYApgMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQQFBgcDAgj/xABHEAACAQMDAwIDBQQECgsBAAABAgMABBEFEiEGMUETIgdRYRQjMnGBFTORsTVCYqEXNlJUcnN0lMHRJUNEhJKToqOz0uEW/8QAGgEAAgMBAQAAAAAAAAAAAAAAAgQAAQMFBv/EACgRAAICAgMAAQMDBQAAAAAAAAABAgMRIQQSMUETMlEFYXEiIzNCgf/aAAwDAQACEQMRAD8A1AUtIKWtzghRRRUIFGKKKhAxTa+vooFDyuEUvGgJyR6jNgDt86c1XevdIe8snhjKht0TncSFKJyR2q0i4pNpMn0kVhlSGHkhgy/lkV6rBNKu5I1ElpPLb98BXIQN5JX8JOKlrXqvVYicXSz5xkTRhgn1GK2fHn6tm7o/DNmoxWU2/wAQNSXPqQ203bGN8O2n1n8TXU4ubI89jDJ6mF/I0DqmvgB0yNIrxHIrDKkEc9mDDPkZBxmoXpzqm3vh7MxvuYCOQokzqAMsFB5Wsp6e6kurFS0TGWIST/cniLJflsgZzVKDeiRqbybnRiuFldxzIskbq6HOCjh1z5GQe9d6AyaDFFFFQgYoxRRUIIaKKKhAFLSClqECiiqpqXxAsLeaS3kaX1I3Kvi3LqG/PNXguMXLxFroql/4TtN/yp/91aqv1B8QriZ8WjtbxozbXGGe4TwCpGEolW2zSNMn6sGk6vr9raA+vKqtgEIMvKynsQo9xFUi/wDiazBlgsjjAGZpAi/UbRWfGVslixZyWJdvc/PcV0t4dx57fnTEOOvkYVMY+7Otw7yTGSNYIFKqDHEG9NQO5wfJp1SKgA4FKTTsIqKwW9i0Zri04P4PcaMuRyq/X3UWSHZS6sJI5HilAIDo2yQL5GflTeyhZE2scnLk9znJ75pbcYJHnjjORXehUVnJecFg6H6nFmLmCVh6EMQe3j9glklZ/cFPdzU2fihb/wCZ3f8A4I/+dUH0l3bto3cZOOcUk6zBSyJlOxb3BQ3yz2zS0uMttsHpGT8NU6Z60hv5ngjhmjdELneEA25A+dWeqV8N7WzECzRNvuWVxMzgRz7dwyNueFz/AFqutJSSTFbElLCCiiihAEooNLUIFFIKWoQDWK/ETSJLa9lnP7m6fdG3A+928rjOeK2rNMNb0/7TbzQZAMsciKSm8IxXg0UZdZZNaZ9ZHz/mlpb2AwTy26uJhE5QOFKKSO5wfrxXnNPxkmsj57jTcQP4/QVIQsuMDsO57Amo9c4bHbjNLJKSAPAxWieAWsjuS7Uduf5V5iDOAW/D4GO5ptBEWP081Pw6TOwG2M4wMEkKuPBzRxywG1EZKoA4FLU1b9OSNjewXvkcu1eZmjRbuIe33RBASWYkHkg0eAOyIfHmvaxsQW2nHk7SVH614rRegNTtp7ZtLuBgOX25kKmcliSoxyMYrK2bhHKWQ4rLIHpnoqe+USh0jhJYbs724YggLWpx9LWotvsnpKY8hm4OGl2gb+/eqN0yf2Xqr2Z+99b0UDA7BGDlskVq1c3k2TcvdfAzXFY/cwbXdFudJug8TsM42yAKjXcS7SykZ45qy6R8RbZwRdj7LKXAjT3zh0OMHIHHNW3rrp6O8t2Y8Swo5iY7iFHBbjPPArDiARnHj+AratRuhn5F7q1nDN4zS1lnwy0y4EpngJjtW2b2ZfVW9QMcqp7oQa1Ol5LDwJTh1eAopKKEABS0gpahDyxABJIwM55AAHkk9gKzvr/rXaXsrU+/3JcsV4CFBgxsD+Lmk+JnUd1Dm2SJoYX3o0jKjpeIYuVXytZeDgAAYFa1wT2xumn/AGZ2ZgPqec+WJ8n5k15gBd1H1H6CuNPbf2xlvL5HfAAHmm1tjT0hZWB4UYH8z8650iNnNKTijKJrpux9WQDx3bkD2Crhc6tBGQC2e/CgMFI8fSqjaXLxoyIcbgoY+SMcj8ua5VutIXksslL7WpJQVACrkYxkMB8s5qKlLEEg+76mlrhdK7gQwqXmkzsVeWIHc48jipKaissuMNpI7j/lXuORlIZWKsOxDFWB+eQciuUTZHJ9y8P81kA5H515DneQTxgbfqfNUmmi8DpriQsJC77+MNvYuDjjnuKldM6svrf93cMRzkOfWGT55qFrk8hDDPC47/2vAqpQi1tFpv4L5a/Em5wUuIY5kK4IGYSxP8ao9+0TXCS+kwh9X92kxTYhb2jOD2/LtXqvJFB9CCTxrJbm36bnbogUCMKE527AoTv8hxXSqB8OuoIo449OcekyZFuS3FyzOxKqMdxV/rmSi4vDEbItMKKKKEEWiiioQZarpkVzG0UqAhlcA7FZoyVwSpI9p+tY115oFpYSQxW8srync0u+RHVE8DgcNW4msC67m3anfNjGJQv57UArSHo1xsuXuiFrvcTAhVHZVH0JPk02U5FLTSeh3A4QYA/vqw6F0q9yjTS5SDbLtAJSYyDtwRgrUfomkz3DO0cSTpEVEkbS+iXBHAzWjaZ1Ha7Ta3O6yudgVY5QVHp7Tgq3YjA80vdc01GIzRTHHaf/AAoSAnH6V3WEUtuuB/EfwNezkkKql3OdiqMs/HNdHvhZYiobGt0eVXwck47gjsPoKsHQei+vObhg6vA5EHBSN0KHJPGTXi/6beFbd5MDeHM0hYxIF3DAyezbdwqw6T1QNgg0u1kvnXCBz91bxALwGc/SkOVf2hiPyO0VdJ9pfBTupdMFndNGof05A8jsw4WYucqDjAFRdxwUb+0f4EVpd70jd3qs+oXPfafQgAjiAHIDHGWbxms11bR3s2MM3JP7t8sEmPkKD5Gavi8hNdGwORTl94rR2rjcrlT9OR+ddB/yrncEBW/I4/Oui/BFeiW8+4fUd6GmJUlO47g+PnxUcjEHIPNCuQc555zWffQfUlbO0nuGSKJHErnbHKFdYUfwRIOw+tbfpcLRwQxucukUKudxbLhBk5881n/wh1GZjcWrP9zCkRhTAwhZ2zWk1zrpuUtit73gDRRRWRgFLRXiWRVVmY4VQxYngKoHJ/KoRI9msp1npcG/vGkAne6aVbRI8yi0ldcK84xmNfOas91fyai/o20xt7QEerPuUrfwnhlibujD3c1Nad03FAhNvI5cg/ePKJHlOeN7Yy1ZytUfDqcThy+6WkzMh8JtRH/W23/myf8A1qE6o6TudNELXLxbJXZQUZnKYAycEVqmvdYy2kkUH2Y3E0jsirG2CzBQeAap1pq1zqk/2uZgkFpdgW8PppvikKc7jjDDAYYNFVO2bx8Dt0IV+kRZdcfYgkFpHFcRx5zI6vG0zFsg7RyvfHNS6/Ee2uUZNSsV8coiyK2G4BDe4VeugZJ5lnld8lpWRV2KixKv6fWq/q/U51C//Z8N2LG3iE/qyvHGfVmVsFSHO3GRkVcq0n+4Cvk/4InRdGW9Mj28o9D1HERAaV2XdyCDyDg9zV96f6VhtstjLHbnLbiWx/BfyFZ5Jrawiy1eMJHKJ5bS/wBiowuIVwQ4XsrFBU3/AIYbQ8C3nU84OYn2HwcZobZWS1nRrXOCWcbJDrO80uOcC5SSe42KwijiebdGeA2M7eCKgrvqzUj/AEfpUsav+CR7Z2ZxnhgoAUcVP/DXTA+kKwdklunuXmdcK4YykEKccLhabato1vFePPeJ/wBH29uvqM0km64uG7Ac5karjWsbZjLkPOEU65fqmQgt9uB8bEWEH9BTaf8AbQinS8trmaIxvuaSEb4ccllamvUHU0l1ercp92kTILNMLtgiVuOMYrW+s9AQyWFwBuK3VqjgqG3xFskf3UagljIP1ZZwYpBraH8SlRxg5DV0u76Nl4cdxnnGP0pnBpTTlnQ8GSQJ7GIYZ4x/GtT6E6FgskW7vSjyuG9NeHhELKpGVZfx0xPkzhHLBhSpywjLUmVjwwP60rqGKKT+J4x8jgtya23W9Asr+1cRxbHj3vGIo0gleQIcL2yVyaovw86WE87yXftktHj3wNGMlyucuPAoI8lTi/yVfW6Vlly6R6ROnXN2yvvgkSBYdz7psg87uMVbKWism8nInJyeWJRS0VRQVUNVnkvr9tMR2txAIJ5HDFhdRHGYmXwMNVuqnaP/AIxXv+w2/wDNKGeosa4cVK3ZboNMtkAjjhiRRnCrGqqoz8q5RgwzhN2Ul3bFxxGQP5Vy1D7mZJgThyqze3cqxhfy4qP1W/Ezr6TEenu9w8kgdqRPT11uWl5gjuqLUvqmlvFGWEc0puSqFhGdvBY1C9OaKy3mq2SLlVuLWWP3biquH5J/0aSDqC4sLq9aeC5ulmKG02D1FIUcj5oKdr0rqcUsmpR3nrzSKjPB6bQi7QL7YmOcdjTtc1BI5V9c5XS1rBoHTsEESOkB3feMZT4aX+tj9RWHdRdLSi4u1C75vXlbg4UIzkj+41bum+tpkMsUOk3MjQsFmVLlJRFJ5B9vzFONS1+5uHDnQbvfgAn10iz8skLW9VkIzfbwynXY4rqtlPTRQIrK1YYE+qQhsqWGFt13ceQd1bJdaPbyQtbmGL0yu0D0lKqPHH0qC6f0CRmS6vUCyJ+5t96zw2jgjEiHw5xkmrREG43Yz5xkDNKX2qU8x8HaK2of1elZ+EbbtOEJ/wCyz3cLHxIRJncB4/FTP4mWMk8sAxm32uFyuVjm59x+uKfahpNxaObnTV3E8Nab1t7WR2PulPzem11ruqFQkuhLL2J26hG6bv4VtTdGMlJ7FbaZ4aiUTTejH3LGjLK0jIM+kR6Q8tjviti6lKrA0jDc1ukk8fux94kTEVTU13UkO6Lp8I/g/bY6cWqanqG1byH7BCCHb0rgStdjsYpBnhCKPkXRk110iqKJr7ts4fDfQY207TppCWdDNNFglAjO/b69qndWVvV3MfHs74VfOfrmpm0to4kWOJFjjQYRVUKqL8gKj7uxldycrjnbzjC0hOTkdXjJQeWcdFQeozY52YP5ZqB6V/pXXP8AW2v/AMZqV1fVUs4xHGpmuZCECxhZZIWZeHde4QHzR05opt/UmmYPeXG03jqSI5JBnGBgBa2oi1s536pfGSwibpKKWtzgiUUGlqFiVTtH/wAYr3/Ybf8AnHU51LrUdnB6sofDusa7FDN6jA48jivHQ2hy2dqsdzse5zLvcMZGdC3A3EbjWdrxH+To/p9bc+3wWCRAwKsMg5yPBFV6Cw3TPGD7UY5+YXwKseKitW1S2sUMkrYLlzGveWeTH4UH9Y/2aUS+DvRt6Jj6KxjXBCDIxg45zVZ6g1d7mRtOszubLR6hIjNHLpynGGHhjTN9fn1T7i1ilt4e18Z4mgka3bj7ojs9WLStLito1jjHYAFmw0sg8Fm7saYrq+Wcvl83CxHbKf0Lp/7PvLu1mdi9zIjWZblrtEDF2JFX5UPH6fyNR+saTFdIUkBB42ujelKnPZWHuUfzqJs+oZ7RhDqK5UZMl2qCKzRT+FfmD4qW1tvKL4nNTj1l6W5aazXbAyqkLu6IGXsiSsc4UMeM8fpSaVqkF0pkt5VmQMVYo25Q+O1PKWxgfymNtOuxNEkoVk3DkOpR1PkEV3cV6rhPeRp+N1X5ZYCoWlvQgj/4Uy1vWreyiEtxIEU5EeQ33kgUkL2qndQfE5dzWunwST3B3KrbeEkGckLjc5GKoI0/UdVW6vHMj7MOFEblJpM7SsYHAIreFLe2YW8lRH0vWuoXuox/ZJjBvdUt4yyhFU9hJxh6vx0rW5AEk1SFFON5iswkyfkab9G9HqltZtdRbLq2lmkTay9y3G4j8VXcCmOsfwci3mTziLIfQ9CFuTLI5uLohlkndQs0keeFP0GKmKKKsSlJyeWFFGKMH5f3GoUIaWiioQpWuj9o337Kf2QJHFciVPexlU8L/k45q/1Wvh9oc1hZC3nKb/VmY7HLrtYjHirLSls+zPScepVwwFUO+P7Q1R7V/u10yS3miZOWmZguQ1W7XLv0ba4m3bfThmYHGSpCHBrNulerbNIfVdvV1edNsw2urXUwY7FzjatHRHLyZc2bUML000n6/wB5NeGkVe7AfLLBf+NUhupdTlHpfs/7Pv8AaJftSSmAn+vt/rYri/Tzz8ahcteqv7kMgg9Jj3OVPPFOKuTOQqJP3RPa11naWkghlMpbYrfdwmZcH6ioq5+IOlyqUkjndD3DWDOprrptlDa/cQR7EJLH3sw3Ef8A5Ujmtfoflmqpiik6pq+kSsGjkv7QbcFLe3a2iZv8ogdzUPPrl6XhgsNTvbh2DDa8ItigC8YJPNaNL7mC+MEkZOH+QqudKwrcFrqf33UU0yAc5slGcR5HDDBzmsb4KuOfR/iVuyajnX8nnSNM1OUK95qFwO+Y1kww+harNBCq4wPlkklmP1yeSa94PyP8DUJedSwqzwQETXasVWHJjZ3HcZI2jikMSm9I7yVdMfSu9KazpttLM1ykn2qO9unhZIWchCMYJFazYwxIgWFUSPkgIqqu49zgeao2ndMKt3HeRr6TNGwkiCli0z9zuz3qXGhXmnr6tkDNF2FkpWNQzfik9QnP120+44isnl+TT3k3FlroqH0PXUuC0DD07yJQbqHJc27Z4G7G1qmKA50ouLwzyzAdyB+oFJ6gwSCD3zgg+OaqPWTSXE8VgrxxxuqSSl5li9RfVxtBPc+agtStbmwuXtLW7jihdpSgNzH7AEGfUJHsb6VrGvPybQoco5LNBEdSHrvI8VrybYJKYJs9m9QjgjIyK6r0nAe1zdn/AL8xqgWU94YY7dLlBDKk+E9VPYoPuDjGUzmpTpa9Fvdxi3DfZ7h44nSR8SCXy+B4oprq8B/Rk1LD8NOHy/KikorAVHdFFJXOPWFK+KeqTQ20VvCqMb13gfdngFO4OeKg+jhHHGLJ1X7VbDM/3YYLlyQd3ng04vHa41e8imJlht1tntVb3RwylVyyfI0z0L+ltS/0LeuhxXiXUW5FX9ru/wAlnliDDB/TwQa5QyEHY/fnB4wRTiuN2m5T8xyK6SOceH/fD/RP8jVki0hTFg43nkHkfkKgdLQTXEec4KnOPmAau1YXzaaSNIRz6Uy8t3iZSy4758+355+fFQWr9NxXLiT1pYfbyInWFXOeSwxyee9abLErDDKGHHBGRmo1tAgJbgjdnOCAKH6qaxJF9WnlGbf/AMRF/nl3/vAq0aLoACoiKDsUD1HVS5/tFsZY1ZLfRLdM+wN2/EA2KkEQKAqjAGMDsAPAoXZFfagsSl6xrZaekXOMt5J8fSnlFNru4K4VfxtkJ5UH61llthYSRB9W9PW10E9SSWAh2Ja3xHLKSvZjjJFRvTmtSep9hugEuQrNCFVmElmuArFs8N9KuMEAXnuxxuJ5YjwM+RVN+KcZigju4AUuvXtovVQYmFuWbcuR2WplGNtXdFK68vnbUH7fcFFj9vgYYH6nJpjBpN5qUzT7C5kkAklwqxxPgZyK0zV+lrS8cSuDu5yY3VRJ9WOPcaktM06K3jWKJdqjHgbnOPxMfJ+tMO5KKwtif1uscIybXOjbu3y231kCF2dOEiA7gg0z/bExuI7pmDSxlNpKgKdvYYFbdLErAqyhlIIYEBlYfLHYiq7F0RZLL621yd5bYWVovy247VUbYvclskb9YZYgeB+n8qKXHiilxYeU21CcIhJzyGHH5UUVz0etj9yKtGm0BR4qtaH/AEvqX+rt6KKa4f3mn6j/AIkWuiiiuscAkelYNrTsDx7B9fnVioopS772bw8CiiisgwoooqECmGl+8NMfxPw3ywKKKteAj+uc65R17ZVx/wCmiiqZfwUP4VLt0uEfKW6H/umrdRRVs49v3sXNFFFUZiUUUVZZ/9k=" alt="Profile Picture">
+
+            <div class="contact">
+                <h1>Bench Josh Cadile</h1>
+                <p><strong>Address:</strong> Maguyam, Silang, Cavite</p>
+                <p><strong>Contact Number:</strong> 0991 123 4567</p>
+                <p><strong>Email Address:</strong>
+                    <a href="mailto:cbenchjosh@gmail.com">cbenchjosh@gmail.com</a>
+                </p>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>Personal Information</h3>
+        <p><strong>Birthdate:</strong> june 15, 2000</p>
+        <p><strong>Height:</strong> 5'3"</p>
+        <p><strong>Weight:</strong> 55 kg</p>
+        <p><strong>Sex:</strong> Male</p>
+        <p><strong>Civil Status:</strong> Single</p>
+        <p><strong>Citizenship:</strong> Filipino</p>
+        <p><strong>Religion:</strong> Catholic</p>
+        <p><strong>Mother's Name:</strong> Doris Cadile</p>
+        <p><strong>Father's Name:</strong> Randy Cadile</p>
+
+        <hr>
+
+        <h3>Educational Background</h3>
+        <p><strong>Primary:</strong>  Elementary School (S.Y. 2013–2019)</p>
+        <p><strong>Secondary:</strong>  National High School (S.Y. 2019–2023)</p>
+        <p><strong>Tertiary:</strong> PhilTech – GMA</p>
+
+    </div>
+
+</body>
+</html>
